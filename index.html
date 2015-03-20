@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Baycrest | Home</title>
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/tooltipster.css" />
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery-ui-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider-home').nivoSlider();
+		$('.tooltip').tooltipster();
+		$('#box-3 a').hover (
+		function() {
+			$(this).addClass('boxhover');},
+		function() {
+			$(this).removeClass('boxhover');
+		});
+		$('#box-4 a').hover (
+		function() {
+			$(this).addClass('boxhover');},
+		function() {
+			$(this).removeClass('boxhover');
+		});
+		$('#footer-home-menu li').hover (
+		function() {
+			$(this).addClass('menu-footer-hover');},
+		function() {
+			$(this).removeClass('menu-footer-hover');
+		});
+    });
+</script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+  // Reset Font Size
+  var originalFontSize = $('html').css('font-size');
+  $(".resetFont").click(function(){
+  $('html').css('font-size', originalFontSize);
+  });
+  // Increase Font Size
+  $(".increaseFont").click(function(){
+  	var currentFontSize = $('html').css('font-size');
+ 	var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum+1;
+	$('html').css('font-size', newFontSize);
+	return false;
+  });
+  // Decrease Font Size
+  $(".decreaseFont").click(function(){
+  	var currentFontSize = $('html').css('font-size');
+ 	var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum-1;
+	$('html').css('font-size', newFontSize);
+	return false;
+  });
+});
+</script>
+</head>
+
+<body>
+<!-- Container -->
+	<div id="container">
+    <!-- Wrapper -->
+        <div class="wrapper">
+        <!-- Section header -->
+            <header class="center">
+            <!-- Menu nav -->
+            	<div class="in-block">
+                    <div class="left-header align-left">
+                        <a href="#"><img alt="Baycrest Logo" title="Baycrest" src="img/logo-baycrest.png" /></a>
+                    </div>
+                    <div class="right-header align-right">
+                    	<div class="table">
+                        	<div class="cell-table"><input type="text" id="s" name="s" onblur="if(this.value=='') this.value='What are you looking for?'" onclick="if(this.value=='What are you looking for?') this.value=''" value="What are you looking for?" class="search-wp"></div>
+                        	<div class="cell-table fontdinamic"><a class="increaseFont">A+</a> | <a class="decreaseFont">A-</a> | <a class="resetFont">RESET</a></div>
+                        	<div class="cell-table"><a class="donate">DONATE NOW</a></div>
+                        </div>
+                        <nav>
+                        	<ul id="nav">
+                            	<li><a href="#">About</a></li>
+                                <li><a href="#">Care</a></li>
+                                <li><a href="#">Learn</a></li>
+                                <li><a href="#">Discover</a></li>
+                                <li><a href="#">Engage</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+             	</div>
+            <!-- End Menu Nav -->
+            </header>
+            <div class="clear"></div>
+        <!-- End Section Header -->
+        <!-- Slider home -->
+            <aside class="slider-home">
+            <div id="wrapper">
+                <div class="slider-wrapper theme-default border-gris">
+                    <div class="ribbon"></div>
+                    <div id="slider-home" class="nivoSlider">
+                        <img src="img/slider/1.jpg" alt="" title="#htmlcaption1" />
+                        <img src="img/slider/2.jpg" alt="" title="#htmlcaption2" />
+                        <img src="img/slider/3.jpg" alt="" title="#htmlcaption3" />
+                        <img src="img/slider/4.jpg" alt="" title="#htmlcaption4" />
+                    </div>
+                    <div id="htmlcaption1" class="nivo-html-caption">
+                        <div class="cont-nivo-caption">
+                            <h2>Generations</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utv enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utnon proident, sunt in culpa.</p>
+                            <a class="more">JOIN NOW!</a>
+                        </div>
+                    </div>
+                    <div id="htmlcaption2" class="nivo-html-caption">
+                        <div class="cont-nivo-caption">
+                            <h2>Generations 2</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utv enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utnon proident, sunt in culpa.</p>
+                            <a class="more">JOIN NOW!</a>
+                        </div>
+                    </div>
+                    <div id="htmlcaption3" class="nivo-html-caption">
+                        <div class="cont-nivo-caption">
+                            <h2>Generations 3</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utv enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utnon proident, sunt in culpa.</p>
+                            <a class="more">JOIN NOW!</a>
+                        </div>
+                    </div>
+                    <div id="htmlcaption4" class="nivo-html-caption">
+                        <div class="cont-nivo-caption">
+                            <h2>Generations 4</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utv enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utnon proident, sunt in culpa.</p>
+                            <a class="more">JOIN NOW!</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            </aside>
+        <!-- End Slider home -->
+        <!-- Section home -->
+            <section id="section-home" class="center">
+            <!-- Boxes 3 -->
+                <div id="box-3">
+                	<a href="#">
+                        <article class="border-gris">
+                            <h4>Latest News</h4>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="border-gris">
+                            <h4>Aging Brain</h4>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="border-gris">
+                            <h4>Donate</h4>
+                        </article>
+                    </a>
+                </div>
+            <!-- End Boxes 3 -->
+            <!-- Boxes 4 -->
+                <div id="box-4">
+                    <a href="#">
+                        <article class="border-gris">
+                            <h5>Innovations</h5>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="border-gris">
+                            <h5>Events</h5>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="border-gris">
+                            <h5>Visitors</h5>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="border-gris">
+                            <h5>Work at Baycrest</h5>
+                        </article>
+                    </a>
+                     
+                </div>
+            <!-- End Boxes 4 -->
+            <!-- End Section Social Home -->
+            </section>
+            <!-- Section Social Home -->
+            <div id="social-home">
+                	<div class="cont-social-home table">
+                        	<div class="align-left">
+                                <span>KEEP IN TOUCH</span>
+                                <input type="text" id="s" name="s" onblur="if(this.value=='') this.value='Enter your Email'" onclick="if(this.value=='Enter your Email') this.value=''" value="Enter your Email" class="email-subscribe">
+                                <a class="subscribe">SUBSCRIBE!</a>
+                        	</div>
+                            <div class="align-left">
+                            <span>FOLLOW US</span>
+                            </div>
+                        <div class="align-right">
+                                <ul class="social" id="tooltip-social">
+                                    <li><a class="tooltip" title="Youtube" href="#">youtube</a></li>
+                                    <li><a class="tooltip" title="Twitter" href="#">twitter</a></li>
+                                    <li><a class="tooltip" title="Facebook" href="#">facebook</a></li>
+                                    <li><a class="tooltip" title="Linkedin" href="#">linkedin</a></li>
+                                    <li><a class="tooltip" title="Google Plus" href="#">google +</a></li>
+                                    <li><a class="tooltip" title="Instagram" href="#">instagram</a></li>
+                                    <li><a class="tooltip" title="Pinterest" href="#">pinterest</a></li>
+                                </ul>
+                      	</div>
+                    </div>
+                </div>
+        <!-- End Section home -->
+        <!-- Footer -->
+            <footer id="footer-home">
+            	<div class="center">
+                	<div class="footer-home-wrapper in-block">
+                    	<div class="left-footer align-left">
+                        	<img src="img/logo-footer.png" alt="Baycrest" class="clear" />
+                            <div><p>3560 Bathurst Street<br />Toronto, Ontario<br />Canada M6A 2E1<br />Phone: 416-785-2500</p></div>
+                            <a href="#" class="btn">CONTACT</a>
+                            <img src="img/uoft.png" alt="Universidad de Toronto" class="clear" />
+                            <div><p>Baycrest is an academic<br />health sciences centre<br />fully affiliated with the<br />University of Toronto</p></div>
+                        </div>
+                        <div class="right-footer align-left">
+                        	<ul id="footer-home-menu">
+                            	<li><a href="#">About</a>
+                                	<ul>
+                                        <li><a href="#">About Baycrest</a></li>
+                                        <li><a href="#">Strategic Plan</a></li>
+                                        <li><a href="#">Governance</a></li>
+                                        <li><a href="#">Quality and Performance</a></li>
+                                        <li><a href="#">Information and Privacy</a></li>
+                                        <li><a href="#">History of Baycrest</a></li>
+                                        <li><a href="#">Annual Reports</a></li>
+                                        <li><a href="#">Fiscal Accountability
+</a></li>
+                                        <li><a href="#">Accreditation</a></li>
+                                        <li><a href="#">Ombudsman</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Learn</a>
+                                	<ul>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">Message V-P Education
+</a></li>
+                                        <li><a href="#">Students and Trainees
+</a></li>
+                                        <li><a href="#">Baycrest Centre for Learning</a></li>
+                                        <li><a href="#">Visiting Professors
+</a></li>
+                                        <li><a href="#">Conferences and Seminars</a></li>
+                                        <li><a href="#">Insight into Aging
+</a></li>
+                                        <li><a href="#">Tele-education</a></li>
+                                        <li><a href="#">Health Info</a></li>
+                                        <li><a href="#">Speaker Series</a></li>
+                                    </ul>
+                                <li><a href="#">ENGAGE</a>
+                                	<ul>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">Online Store
+</a></li>
+                                        <li><a href="#">Donations</a></li>
+                                        <li><a href="#">Board of Directors</a></li>
+                                        <li><a href="#">Women of Baycrest</a></li>
+                                        <li><a href="#">Dancing with our Stars
+</a></li>
+                                        <li><a href="#">Scotiabank Pro-Am</a></li>
+                                        <li><a href="#">Barrie to Baycrest</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Volunteers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">care</a>
+                                	<ul>
+                                		<li><a href="#">Events</a></li>
+                                        <li><a href="#">Care Programs</a></li>
+                                        <li><a href="#">Family and Visitors</a></li>
+                                        <li><a href="#">Culture, Arts & Innovation</a></li>
+                                        <li><a href="#">Healthcare Professionals</a></li>
+                                        <li><a href="#">Outbreak Information</a></li>
+                              		</ul>
+                                <li><a href="#">DISCOVER</a>
+                                	<ul>
+                                		<li><a href="#">Events</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Innovation</a></li>
+                                        <li><a href="#">Rotman ResearchInstitute</a></li>
+                                        <li><a href="#">Idea Submission</a></li>
+                                        <li><a href="#">Collaborations</a></li>
+                              		</ul>
+                                </li>
+                                <li><a href="#">SUPPORT</a>
+                                	<ul>
+                                		<li><a href="#">About the Foundation</a></li>
+                                        <li><a href="#">Ways of Giving</a></li>
+                                        <li><a href="#">Foundation Events</a></li>
+                                        <li><a href="#">Donor Centre</a></li>
+                                        <li><a href="#">Send an e-Card</a></li>
+                                        <li><a href="#">Make a Donation</a></li>
+                                        <li><a href="#">Annual Campaign</a></li>
+                                        <li><a href="#">Contact the Foundation</a></li>
+                              		</ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="copy center">
+                        	<p>PRIVACY STATEMENT - DISCLAIMER - © 2013 BAYCREST HEALTH SCIENCE. ALL RIGHTS RESERVED</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-- End Footer -->
+        </div>
+    <!-- End Wrapper -->
+    </div>
+<!-- End Container -->
+</body>
+</html>
